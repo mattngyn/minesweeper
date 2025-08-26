@@ -1,0 +1,29 @@
+version: '1.0'
+image: minesweeper:dev@sha256:5ef60b8b3c5e782f98ec7515eaa245c41340dc4dd0521030153bb97e01f5d179
+build:
+  generatedAt: '2025-08-25T23:25:04.569878Z'
+  hudVersion: 0.4.1
+  directory: minesweeper
+environment:
+  initializeMs: 1519
+  toolCount: 5
+tools:
+- name: setup
+  description: "Required for HUD environments. Initialize a new minesweeper game.\n\
+    \nArgs:\n    rows: Number of rows on the board (default: 9)\n    cols: Number\
+    \ of columns on the board (default: 9) \n    num_mines: Number of mines to place\
+    \ (default: 10)\n\nReturns:\n    Game setup status and initial board state"
+- name: reveal
+  description: "Reveal a cell on the minesweeper board.\n\nArgs:\n    row: Row coordinate\
+    \ (0-based)\n    col: Column coordinate (0-based)\n\nReturns:\n    Result of the\
+    \ reveal action and updated board state"
+- name: flag
+  description: "Flag or unflag a cell on the minesweeper board.\n\nArgs:\n    row:\
+    \ Row coordinate (0-based)\n    col: Column coordinate (0-based)\n\nReturns:\n\
+    \    Result of the flag action and updated board state"
+- name: get_board
+  description: "Get the current state of the minesweeper board.\n\nReturns:\n    Current\
+    \ board display with game status information"
+- name: evaluate
+  description: "Required for HUD environments. Return current game state for evaluation.\n\
+    \nReturns:\n    Dictionary with game performance metrics"
