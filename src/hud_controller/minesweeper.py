@@ -219,14 +219,15 @@ class MinesweeperGame:
     def _get_board_display(self) -> str:
         """Get a formatted string representation of the current board."""
         # Header with column numbers
-        header = "   " + " ".join(f"{c:2}" for c in range(self.cols))
+        header = "    " + " ".join(f"{c:2}" for c in range(self.cols))
         lines = [header]
         
         # Board rows with row numbers
         for r in range(self.rows):
             row_str = f"{r:2} "
             for c in range(self.cols):
-                row_str += f" {self.display_board[r][c]}"
+                # Format each cell to align with column headers (2 chars wide)
+                row_str += f" {self.display_board[r][c]:>2}"
             lines.append(row_str)
         
         return "\n".join(lines)

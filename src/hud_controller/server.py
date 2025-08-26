@@ -32,10 +32,12 @@ async def setup(rows: int = 9, cols: int = 9, num_mines: int = 10) -> Dict[str, 
     """
     try:
         result = ctx.new_game(rows, cols, num_mines)
+        board_state = ctx.get_board_state()
         return {
             "status": "ready",
             "message": f"New {rows}x{cols} minesweeper game created with {num_mines} mines",
-            "game_info": result
+            "game_info": result,
+            "initial_board": board_state["board"]
         }
     except ValueError as e:
         return {
@@ -67,6 +69,7 @@ async def reveal(row: int, col: int) -> list[TextContent]:
     else:
         message = f"Error: {result['message']}"
     
+    message += "\n[ASCII]"
     return [TextContent(text=message, type="text")]
 
 @mcp.tool()
@@ -87,6 +90,8 @@ async def flag(row: int, col: int) -> list[TextContent]:
         message = f"{result['message']}\nMines remaining: {result.get('mines_flagged', 'unknown')}\n\n{result['board']}"
     else:
         message = f"Error: {result['message']}"
+    
+    message += "\n[ASCII]"
     
     return [TextContent(text=message, type="text")]
 
@@ -110,7 +115,8 @@ async def get_board() -> list[TextContent]:
         status_info.append("🎮 GAME IN PROGRESS")
     
     status_info.append(f"Mines remaining: {board_state['mines_remaining']}")
-    
+    status_info.append(f"\n[ASCII]")
+
     message = "\n".join(status_info) + f"\n\n{board_state['board']}"
     
     return [TextContent(text=message, type="text")]
@@ -125,30 +131,46 @@ async def evaluate() -> Dict[str, Any]:
     """
     state = ctx.get_game_state()
     
-    # Calculate reward based on game outcome and progress
+    # Calculate expected cells revealed by random play
+    # Using negative hypergeometric distribution expectation: E[X] = (N - M) / (M + 1)
+    # where N = total cells, M = mines
+    total_cells = state["cells_total"]
+    num_mines = state["num_mines"]
+    expected_random_cells = (total_cells - num_mines) / (num_mines + 1)
+    
+    # Calculate reward based on performance vs random baseline
+    cells_revealed = state["cells_revealed"]
+    
     if state["won"]:
         reward = 1.0  # Full reward for winning
-    elif state["game_over"]:
-        reward = 0.0  # No reward for hitting mine
     else:
-        # Partial reward based on safe progress
-        reward = min(0.9, state["progress"] * 0.5)  # Cap at 0.9 to incentivize winning
+        # Only reward performance better than random
+        if cells_revealed <= expected_random_cells:
+            reward = 0.0  # No reward for random-level performance
+        else:
+            # Scale from 0 to 0.5 for cells above expected
+            # Maximum possible cells to reveal = total_cells - num_mines
+            max_possible = total_cells - num_mines
+            cells_above_expected = cells_revealed - expected_random_cells
+            max_above_expected = max_possible - expected_random_cells
+            
+            # Linear scaling from 0 to 0.5
+            reward = 0.5 * (cells_above_expected / max_above_expected)
     
+    # Create evaluation summary for content field
+    eval_summary = f"""Game Statistics:
+- Cells Revealed: {cells_revealed} / {total_cells - num_mines}
+- Expected Random: {expected_random_cells:.1f} cells
+- Performance: {max(0, cells_revealed - expected_random_cells):.0f} cells above random
+- Win Status: {'Won' if state['won'] else 'Lost'}
+- Reward: {reward:.3f}"""
+    
+    # Only return fields that HUD framework actually uses
+    # Note: HUD's agent framework (base.py) only extracts "reward" and "content" fields
+    # All other fields are discarded, so we don't include them
     return {
         "reward": reward,
-        "done": state["game_over"],
-        "won": state["won"],
-        "progress": state["progress"],
-        "cells_revealed": state["cells_revealed"],
-        "games_played": state["games_played"],
-        "games_won": state["games_won"],
-        "win_rate": state["win_rate"],
-        "info": {
-            "board_size": f"{state['rows']}x{state['cols']}",
-            "num_mines": state["num_mines"],
-            "cells_total": state["cells_total"],
-            "cells_flagged": state["cells_flagged"]
-        }
+        "content": eval_summary
     }
 
 if __name__ == "__main__":
