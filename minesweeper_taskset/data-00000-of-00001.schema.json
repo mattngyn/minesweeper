@@ -1,0 +1,42 @@
+{
+  "fields": [
+    {
+      "name": "id",
+      "type": {},
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "prompt",
+      "type": {},
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "mcp_config",
+      "type": {},
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "setup_tool",
+      "type": {},
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "evaluate_tool",
+      "type": {},
+      "nullable": true,
+      "metadata": {}
+    },
+    {
+      "name": "metadata",
+      "type": {},
+      "nullable": true,
+      "metadata": {}
+    }
+  ],
+  "metadata": {},
+  "dictionaries": {}
+}

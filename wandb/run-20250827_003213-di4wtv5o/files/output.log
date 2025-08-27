@@ -1,0 +1,229 @@
+  0%|                                                                                         | 0/500 [00:00<?, ?it/s]2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-27 00:32:14 - verifiers.envs.HUDGym - INFO - Initializing MCP client with config: {'minesweeper': {'command': 'docker', 'args': ['run', '--rm', '-i', 'minesweeper:dev']}}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:17 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:18 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:19 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 65}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 9, 'cols': 9, 'num_mines': 10, 'random_seed': 67}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 7, 'cols': 7, 'num_mines': 7, 'random_seed': 60}
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - MCP client initialized successfully
+2025-08-27 00:32:20 - verifiers.envs.HUDGym - INFO - Running setup tool: Tool: setup
+Arguments: {'rows': 5, 'cols': 5, 'num_mines': 3, 'random_seed': 51}
+2025-08-27 00:32:21 - verifiers.envs.HUDGym - INFO - Running evaluate tool: Tool: evaluate
+2025-08-27 00:32:21 - verifiers.envs.HUDGym - INFO - Task minesweeper_hard_25 evaluation reward: 0.00
+2025-08-27 00:32:21 - verifiers.envs.HUDGym - INFO - Task minesweeper_hard_25 completed in 1 turns
+2025-08-27 00:32:22 - verifiers.envs.HUDGym - INFO - Running evaluate tool: Tool: evaluate
+2025-08-27 00:32:22 - verifiers.envs.HUDGym - INFO - Task minesweeper_easy_9 evaluation reward: 1.00
+2025-08-27 00:32:22 - verifiers.envs.HUDGym - INFO - Task minesweeper_easy_9 completed in 2 turns
+                                                                                                                      Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/grpo_trainer.py", line 691, in _inner_training_loop
+    return super()._inner_training_loop(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2582, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 3790, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/grpo_trainer.py", line 1042, in _prepare_inputs
+    batch_result = self.async_generator.get_batch(batch_id_to_retrieve)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/async_batch_generator.py", line 166, in get_batch
+    result = self.result_queue.get(timeout=0.1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/train_minesweeper.py", line 68, in <module>
+    main()
+  File "/home/ubuntu/minesweeper/train_minesweeper.py", line 61, in main
+    trainer.train()
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2238, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/grpo_trainer.py", line 699, in _inner_training_loop
+    self.async_generator.stop()
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/async_batch_generator.py", line 114, in stop
+    self.worker_thread.join(timeout=10.0)
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1153, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+                                                                                                                      2025-08-27 00:32:25 - verifiers.envs.HUDGym - INFO - Running evaluate tool: Tool: evaluate
+2025-08-27 00:32:25 - verifiers.envs.HUDGym - INFO - Task minesweeper_hard_25 evaluation reward: 0.1002:24,  4.83s/it]
+2025-08-27 00:32:25 - verifiers.envs.HUDGym - INFO - Task minesweeper_hard_25 completed in 6 turns
+Exception ignored in atexit callback: <bound method TracerProvider.shutdown of <opentelemetry.sdk.trace.TracerProvider object at 0x7f4a0d9e1d00>>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py", line 1281, in shutdown
+    self._active_span_processor.shutdown()
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/opentelemetry/sdk/trace/__init__.py", line 180, in shutdown
+    sp.shutdown()
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/opentelemetry/sdk/trace/export/__init__.py", line 196, in shutdown
+    return self._batch_processor.shutdown()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/opentelemetry/sdk/_shared_internal/__init__.py", line 194, in shutdown
+    self._worker_thread.join(timeout_millis / 1000)
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1153, in join
+    self._wait_for_tstate_lock(timeout=max(timeout, 0))
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:

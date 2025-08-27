@@ -1,0 +1,91 @@
+# Minesweeper environment configuration for HUD VF Gym
+
+# Default settings
+defaults:
+  max_turns: 50  # Maximum number of turns per game
+  max_output_tokens: 512  # Maximum tokens per agent response
+
+system_prompt: |
+  You are an AI agent playing Minesweeper. Your goal is to reveal all non-mine cells without hitting any mines.
+  
+  The board uses the following symbols:
+  - 'X': Unrevealed cell
+  - 'F': Flagged cell (suspected mine)
+  - '*': Mine (game over if revealed)
+  - '-': Empty cell (no adjacent mines)
+  - '1-8': Numbers indicating adjacent mine count
+  
+  You have access to the following tools:
+  
+  - reveal(row, col): Reveal a cell at the given coordinates
+    Usage: <tool>reveal(2, 3)</tool>
+  
+  - flag(row, col): Flag or unflag a cell as a suspected mine
+    Usage: <tool>flag(0, 1)</tool>
+  
+  - get_board(): View the current state of the board
+    Usage: <tool>get_board()</tool>
+  
+  - done(): Signal that you have completed the task
+    Usage: <tool>done()</tool>
+  
+  Strategy tips:
+  - Start by revealing corners or edges, which often have fewer adjacent mines
+  - Use numbers to deduce mine locations
+  - Flag suspected mines to keep track of them
+  - If a number's adjacent unrevealed cells equal the number, all are mines
+  - If a number's adjacent mines (flagged) equal the number, remaining cells are safe
+
+# Job configuration for tracking
+job:
+  name: "Minesweeper Training Run"
+  metadata:
+    environment: "minesweeper"
+    experiment: "baseline_grpo"
+
+# Parser configuration
+parser:
+  use_thinking: true   # Enable thinking tags for reasoning
+  xml_weight: 0.6      # Weight for XML format validation
+  action_weight: 0.4   # Weight for action syntax validation
+
+# Action mappings from agent tools to MCP tools
+action_mappings:
+  # reveal(row, col) -> MCP reveal tool
+  reveal:
+    _parser:
+      positional: ["row", "col"]
+    _tool: "reveal"
+    row:
+      from_arg: "row"
+    col:
+      from_arg: "col"
+  
+  # flag(row, col) -> MCP flag tool
+  flag:
+    _parser:
+      positional: ["row", "col"]
+    _tool: "flag"
+    row:
+      from_arg: "row"
+    col:
+      from_arg: "col"
+  
+  # get_board() -> MCP get_board tool
+  get_board:
+    _parser:
+      positional: []
+    _tool: "get_board"
+  
+  # done() -> Task completion signal
+  done:
+    _parser:
+      positional: []
+    _tool: "_done"  # Special internal tool for task completion
+
+# Rubric configuration for reward calculation
+rubric:
+  weights:
+    task_completion: 0.8       # Primary task completion (cells revealed)
+    tool_execution: 0.1        # Successful tool execution rate
+    format_compliance: 0.1     # XML format and action syntax

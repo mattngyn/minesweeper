@@ -3,7 +3,7 @@ from hud.server import MCPServer
 from hud.server.context import attach_context
 from mcp.types import TextContent
 from typing import Dict, Any
-
+import random
 mcp = MCPServer(name="minesweeper")
 ctx = None
 
@@ -18,7 +18,7 @@ async def cleanup():
     ctx = None
 
 @mcp.tool()
-async def setup(rows: int = 9, cols: int = 9, num_mines: int = 10) -> Dict[str, Any]:
+async def setup(rows: int = 9, cols: int = 9, num_mines: int = 10, random_seed: int = 42) -> list[TextContent]:
     """
     Required for HUD environments. Initialize a new minesweeper game.
     
@@ -30,20 +30,14 @@ async def setup(rows: int = 9, cols: int = 9, num_mines: int = 10) -> Dict[str, 
     Returns:
         Game setup status and initial board state
     """
-    try:
-        result = ctx.new_game(rows, cols, num_mines)
-        board_state = ctx.get_board_state()
-        return {
-            "status": "ready",
-            "message": f"New {rows}x{cols} minesweeper game created with {num_mines} mines",
-            "game_info": result,
-            "initial_board": board_state["board"]
-        }
-    except ValueError as e:
-        return {
-            "status": "error",
-            "message": str(e)
-        }
+    random.seed(random_seed)
+
+    result = ctx.new_game(rows, cols, num_mines)
+    board_state = ctx.get_board_state()
+    message = f"New {rows}x{cols} minesweeper game created with {num_mines} mines\n"
+    message += f"Game info: {result}\n"
+    message += f"Initial board:\n{board_state['board']}"
+    return [TextContent(text=message, type="text")]
 
 @mcp.tool()
 async def reveal(row: int, col: int) -> list[TextContent]:
@@ -122,7 +116,7 @@ async def get_board() -> list[TextContent]:
     return [TextContent(text=message, type="text")]
 
 @mcp.tool()
-async def evaluate() -> Dict[str, Any]:
+async def evaluate() -> list[TextContent]:
     """
     Required for HUD environments. Return current game state for evaluation.
     
@@ -165,13 +159,7 @@ async def evaluate() -> Dict[str, Any]:
 - Win Status: {'Won' if state['won'] else 'Lost'}
 - Reward: {reward:.3f}"""
     
-    # Only return fields that HUD framework actually uses
-    # Note: HUD's agent framework (base.py) only extracts "reward" and "content" fields
-    # All other fields are discarded, so we don't include them
-    return {
-        "reward": reward,
-        "content": eval_summary
-    }
+    return [TextContent(text=eval_summary, type="text")]
 
 if __name__ == "__main__":
     mcp.run()

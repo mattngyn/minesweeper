@@ -6,7 +6,6 @@ import random
 import copy
 from typing import Tuple, Optional, List, Dict, Any
 
-
 class MinesweeperGame:
     """Minesweeper game implementation for HUD environment."""
     

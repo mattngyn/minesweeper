@@ -1,0 +1,1009 @@
+  0%|                                                                                          | 0/500 [00:00<?, ?it/s]2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23/32 [00:00<?, ?it/s]
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_easy_9
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_medium_18
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_23
+2025-08-26 23:24:05 - verifiers.envs.HUDGym - INFO - Starting rollout for task: minesweeper_hard_25
+Running 32 rollouts:   0%|                                                                      | 0/32 [00:00<?, ?it/s]
+Error in generation worker: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Exception in thread AsyncBatchGenerator:
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1075, in _bootstrap_inner
+    self.run()
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1012, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/async_batch_generator.py", line 252, in _generation_worker
+    raise e
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/async_batch_generator.py", line 241, in _generation_worker
+    result = loop.run_until_complete(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/async_batch_generator.py", line 267, in _generate_batch_async
+    env_results = await self.env.a_generate(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 400, in a_generate
+    rollouts = await self.run_rollouts(
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 328, in run_rollouts
+    return await tqdm_asyncio.gather(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 79, in gather
+    res = [await f for f in cls.as_completed(ifs, loop=loop, timeout=timeout,
+           ^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 631, in _wait_for_one
+    return f.result()  # May raise f.exception().
+           ^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/train_minesweeper.py", line 68, in <module>
+    main()
+  File "/home/ubuntu/minesweeper/train_minesweeper.py", line 61, in main
+    trainer.train()
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2238, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/grpo_trainer.py", line 691, in _inner_training_loop
+    return super()._inner_training_loop(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 2582, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/transformers/trainer.py", line 3790, in training_step
+    inputs = self._prepare_inputs(inputs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/grpo_trainer.py", line 1042, in _prepare_inputs
+    batch_result = self.async_generator.get_batch(batch_id_to_retrieve)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/trainers/async_batch_generator.py", line 166, in get_batch
+    result = self.result_queue.get(timeout=0.1)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/queue.py", line 180, in get
+    self.not_empty.wait(remaining)
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 359, in wait
+    gotit = waiter.acquire(True, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in atexit callback: <function _start_and_connect_service.<locals>.teardown_atexit at 0x7f8911c8a980>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_connection.py", line 54, in teardown_atexit
+    conn.teardown(hooks.exit_code)
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/wandb/sdk/lib/service/service_connection.py", line 182, in teardown
+    self._router.join()
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/wandb/sdk/interface/router.py", line 75, in join
+    self._thread.join()
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+Exception ignored in atexit callback: <bound method TMonitor.exit of <TMonitor(Thread-1, stopped daemon 140226185918016)>>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/_monitor.py", line 44, in exit
+    self.join()
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1149, in join
+    self._wait_for_tstate_lock()
+  File "/home/ubuntu/.local/share/uv/python/cpython-3.12.11-linux-x86_64-gnu/lib/python3.12/threading.py", line 1169, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt:
+Task exception was never retrieved
+future: <Task finished name='Task-3' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-4' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-5' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-6' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-7' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-8' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-9' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-10' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-11' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-12' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-13' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-14' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-15' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-16' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-17' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-18' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-19' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-20' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-21' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-22' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-23' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-24' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-25' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-26' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-27' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-28' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 3, 'random_seed': 51}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-29' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-30' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-31' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...: 7, 'random_seed': 60}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-32' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 65}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+Task exception was never retrieved
+future: <Task finished name='Task-33' coro=<tqdm_asyncio.gather.<locals>.wrap_awaitable() done, defined at /home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py:75> exception=2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing>
+Traceback (most recent call last):
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/tqdm/asyncio.py", line 76, in wrap_awaitable
+    return i, await f
+              ^^^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/verifiers/envs/environment.py", line 284, in run_rollout_with_semaphore
+    return await self.rollout(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/minesweeper/hud-vf-gym/src/hud_vf_gym/hud_vf_gym.py", line 172, in rollout
+    task_config = Task(
+                  ^^^^^
+  File "/home/ubuntu/minesweeper/.venv/lib/python3.12/site-packages/pydantic/main.py", line 253, in __init__
+    validated_self = self.__pydantic_validator__.validate_python(data, self_instance=self)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 2 validation errors for Task
+setup_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',... 10, 'random_seed': 67}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
+evaluate_tool.name
+  Field required [type=missing, input_value={'server': 'minesweeper',...luate', 'arguments': {}}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/missing
