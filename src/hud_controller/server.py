@@ -159,7 +159,10 @@ async def evaluate() -> list[TextContent]:
 - Win Status: {'Won' if state['won'] else 'Lost'}
 - Reward: {reward:.3f}"""
     
-    return [TextContent(text=eval_summary, type="text")]
+    return {
+        "reward": reward,
+        "content": eval_summary
+    }
 
 if __name__ == "__main__":
     mcp.run()
