@@ -2,7 +2,7 @@
 
 # Default settings
 defaults:
-  max_turns: 50  # Maximum number of turns per game
+  max_turns: 30  # Maximum number of turns per game
   max_output_tokens: 512  # Maximum tokens per agent response
 
 system_prompt: |

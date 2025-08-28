@@ -1,23 +1,28 @@
 #!/usr/bin/env python3
-"""
-GRPO training script for Minesweeper environment with vLLM support.
 
-To run on 2 GPUs (recommended):
-1. GPU 0 for inference: CUDA_VISIBLE_DEVICES=0 vllm serve meta-llama/Llama-3.2-1B-Instruct --dtype auto --api-key token-abc123 --port 8000
-2. GPU 1 for training: CUDA_VISIBLE_DEVICES=1 python train_minesweeper.py
 """
+Training Script for Minesweeper (2 GPUs)
 
-import os
+Terminal 1 - Start vLLM server:
+
+  CUDA_VISIBLE_DEVICES=0 vf-vllm \
+      --model Qwen/Qwen2.5-3B-Instruct \
+      --enforce-eager \
+      --disable-log-requests
+
+  Terminal 2 - Run training:
+
+  CUDA_VISIBLE_DEVICES=1 uv run train_minesweeper.py
+
+rm -rf ~/.triton ~/.cache/torch/inductor ~/.cache/torch/extension_cache
+"""
 import verifiers as vf
-
-from datasets import load_from_disk, Dataset as VerifiersDataset
 
 def main():
     env = vf.load_environment(
         env_id="hud-vf-gym",
         taskset="kizro/minesweeper_taskset",  
         config_path="./configs/minesweeper.yaml",
-        num_tasks=4,
     )
     
     # 2. Load model and tokenizer
@@ -29,14 +34,16 @@ def main():
         run_name="minesweeper-grpo"
     )
 
-    args.per_device_train_batch_size = 4
-    args.gradient_accumulation_steps = 8
     args.max_steps = 100
     args.save_strategy = "steps"
     args.save_steps = 10
     args.logging_steps = 1
-    
     args.mask_env_responses = True
+    
+    args.per_device_train_batch_size = 5
+    args.num_generations = 5
+    args.gradient_accumulation_steps = 1
+
     # 4. Train
     trainer = vf.GRPOTrainer(
         model=model,

@@ -28,7 +28,7 @@ def create_minesweeper_tasks():
             "rows": 7,
             "cols": 7,
             "num_mines": 7,
-            "count": 10
+            "count": 0
         },
         # Hard tasks (9x9 board with 10 mines - standard beginner)
         {
@@ -36,7 +36,7 @@ def create_minesweeper_tasks():
             "rows": 9,
             "cols": 9,
             "num_mines": 10,
-            "count": 10
+            "count": 0
         }
     ]
     
@@ -60,7 +60,7 @@ def create_minesweeper_tasks():
                     "rows": config["rows"],
                     "cols": config["cols"],
                     "num_mines": config["num_mines"],
-                    "random_seed": 42 + task_id  # Different seed for each task
+                    "random_seed": 42  # Same seed for each task
                 }
             }
             
@@ -73,7 +73,7 @@ def create_minesweeper_tasks():
             # Create the task
             task = {
                 "id": f"minesweeper_{config['difficulty']}_{task_id}",
-                "prompt": f"Play Minesweeper on a {config['rows']}x{config['cols']} board with {config['num_mines']} mines. Try to reveal as many safe cells as possible without hitting any mines.",
+                "prompt": f"Play Minesweeper on a {config['rows']}x{config['cols']} board with {config['num_mines']} mines. Try to reveal as many safe cells as possible without hitting any mines. You must call tools one by one. Once the game is over, you must stop. If you continue to be unable to call tools, you must stop.",
                 "mcp_config": json.dumps(mcp_config),
                 "setup_tool": json.dumps(setup_tool),
                 "evaluate_tool": json.dumps(evaluate_tool),
@@ -95,27 +95,8 @@ def main():
     tasks = create_minesweeper_tasks()
     
     save_tasks(tasks, "kizro/minesweeper_taskset")
-    # Convert to HuggingFace dataset format
-    dataset_dict = {
-        "id": [t["id"] for t in tasks],
-        "prompt": [t["prompt"] for t in tasks],
-        "mcp_config": [t["mcp_config"] for t in tasks],
-        "setup_tool": [t["setup_tool"] for t in tasks],
-        "evaluate_tool": [t["evaluate_tool"] for t in tasks],
-        "metadata": [t["metadata"] for t in tasks],
-    }
-    
-    dataset = Dataset.from_dict(dataset_dict)
-    
-    # Save locally for testing
-    dataset.save_to_disk("./minesweeper_taskset")
-    print(f"Created {len(tasks)} minesweeper tasks")
-    print("Dataset saved to ./minesweeper_taskset")
-    
-    # To push to HuggingFace Hub (requires authentication):
-    # dataset.push_to_hub("your-username/minesweeper-taskset")
-    
-    # Print sample task for verification
+    print("Pushed to HF")
+
     print("\nSample task:")
     print(json.dumps(tasks[0], indent=2))
 

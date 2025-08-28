@@ -1,12 +1,12 @@
 version: '1.0'
-image: minesweeper:dev@sha256:2641c3a1b0b808e8a7ead695c2fb1e32d463e81a0bb3cf51cf0f9d632be5b795
+image: minesweeper:dev@sha256:7cf2130443a38aef55961cdd80172a3d01e5b0468f8330ea6b7d0ebed5b522b3
 build:
-  generatedAt: '2025-08-27T02:42:15.045391Z'
+  generatedAt: '2025-08-28T00:18:35.683443Z'
   hudVersion: 0.4.10
   directory: minesweeper
-  version: 0.1.11
+  version: 0.1.13
 environment:
-  initializeMs: 1854
+  initializeMs: 1851
   toolCount: 5
 tools:
 - name: setup
