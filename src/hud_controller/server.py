@@ -138,18 +138,7 @@ async def evaluate() -> list[TextContent]:
     if state["won"]:
         reward = 1.0  # Full reward for winning
     else:
-        # Only reward performance better than random
-        if cells_revealed <= expected_random_cells:
-            reward = 0.0  # No reward for random-level performance
-        else:
-            # Scale from 0 to 0.5 for cells above expected
-            # Maximum possible cells to reveal = total_cells - num_mines
-            max_possible = total_cells - num_mines
-            cells_above_expected = cells_revealed - expected_random_cells
-            max_above_expected = max_possible - expected_random_cells
-            
-            # Linear scaling from 0 to 0.5
-            reward = 0.5 * (cells_above_expected / max_above_expected)
+        reward = 0.0  # No reward for hitting a mine
     
     # Create evaluation summary for content field
     eval_summary = f"""Game Statistics:

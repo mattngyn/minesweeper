@@ -36,7 +36,7 @@ def main():
 
     args.max_steps = 100
     args.save_strategy = "steps"
-    args.save_steps = 10
+    args.save_steps = 20
     args.logging_steps = 1
     args.mask_env_responses = True
     
