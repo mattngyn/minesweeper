@@ -6,7 +6,7 @@ Training Script for Minesweeper (2 GPUs)
 Terminal 1 - Start vLLM server:
 
   CUDA_VISIBLE_DEVICES=0 vf-vllm \
-      --model Qwen/Qwen2.5-3B-Instruct \
+      --model Qwen/Qwen3-8B-Instruct \
       --enforce-eager \
       --disable-log-requests
 
@@ -26,7 +26,7 @@ def main():
     )
     
     # 2. Load model and tokenizer
-    model_name = "Qwen/Qwen2.5-3B-Instruct"
+    model_name = "Qwen/Qwen3-8B-Instruct"
     model, tokenizer = vf.get_model_and_tokenizer(model_name)
     
     # 3. Configure training using grpo_defaults
@@ -39,10 +39,12 @@ def main():
     args.save_steps = 20
     args.logging_steps = 1
     args.mask_env_responses = True
+    args.max_prompt_length = 1024 
     
-    args.per_device_train_batch_size = 5
-    args.num_generations = 5
-    args.gradient_accumulation_steps = 1
+    args.per_device_train_batch_size = 4
+    args.num_generations = 16
+    args.gradient_accumulation_steps = 4
+    args.beta = 0
 
     # 4. Train
     trainer = vf.GRPOTrainer(
