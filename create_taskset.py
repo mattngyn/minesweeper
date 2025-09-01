@@ -20,7 +20,7 @@ def create_minesweeper_tasks():
             "rows": 5,
             "cols": 5,
             "num_mines": 3,
-            "count": 10
+            "count": 100
         },
         # Medium tasks (7x7 board with 7 mines)
         {

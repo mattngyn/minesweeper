@@ -105,7 +105,13 @@ class MinesweeperGame:
             return {"status": "invalid", "message": "Cannot reveal flagged cell"}
         
         if self.display_board[row][col] != 'X':
-            return {"status": "invalid", "message": "Cell already revealed"}
+            return {
+                "status": "already_revealed", 
+                "message": f"Cell ({row}, {col}) is already revealed",
+                "board": self._get_board_display(),
+                "game_over": False,
+                "won": False
+            }
         
         # Hit a mine
         if self.grid[row][col] == -1:

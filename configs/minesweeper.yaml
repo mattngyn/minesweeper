@@ -12,11 +12,13 @@ system_prompt: |
 
   ## Board Representation
   The board is a grid made of cells, with each cell represented by one of the following symbols:
-  - 'X': Unrevealed cell
-  - 'F': Flagged cell (suspected mine)
+  - 'X': Unrevealed cell (the only cells you can reveal)
+  - 'F': Flagged cell (suspected mine, must unflag before revealing)
   - '*': Mine (only shown if the game is over)
-  - '-': Empty cell (no adjacent mines)
-  - '1'-'8': A number showing how many mines are in the adjacent cells
+  - '-': Empty cell (no adjacent mines) - ALREADY REVEALED
+  - '1'-'8': A number showing how many mines are in the adjacent cells - ALREADY REVEALED
+  
+  IMPORTANT: Any cell showing '-' or a number ('1'-'8') has already been revealed and cannot be revealed again. You can only reveal cells marked with 'X'.
 
   ## Rules of Play
   - You win by revealing all safe cells (all non-mine cells).

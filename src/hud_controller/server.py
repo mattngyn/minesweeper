@@ -60,6 +60,8 @@ async def reveal(row: int, col: int) -> list[TextContent]:
         message = f"🎉 CONGRATULATIONS! You won!\n\n{result['board']}"
     elif result["status"] == "revealed":
         message = f"Revealed cell ({row}, {col})\n\n{result['board']}"
+    elif result["status"] == "already_revealed":
+        message = f"Cell ({row}, {col}) is already revealed\n\n{result['board']}"
     else:
         message = f"Error: {result['message']}"
     

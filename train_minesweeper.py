@@ -5,14 +5,16 @@ Training Script for Minesweeper (2 GPUs)
 
 Terminal 1 - Start vLLM server:
 
-  CUDA_VISIBLE_DEVICES=0 vf-vllm \
-      --model Qwen/Qwen3-8B-Instruct \
+  CUDA_VISIBLE_DEVICES=0,1 vf-vllm \
+      --model Qwen/Qwen2.5-7B-Instruct \
+      --tensor-parallel-size 2 \
+       --gpu-memory-utilization 0.65 
       --enforce-eager \
       --disable-log-requests
 
   Terminal 2 - Run training:
 
-  CUDA_VISIBLE_DEVICES=1 uv run train_minesweeper.py
+  CUDA_VISIBLE_DEVICES=2,3 uv run accelerate launch --config_file /home/ubuntu/.cache/huggingface/accelerate/default_config.yaml --num_processes 2 train_minesweeper.py
 
 rm -rf ~/.triton ~/.cache/torch/inductor ~/.cache/torch/extension_cache
 """
@@ -26,7 +28,7 @@ def main():
     )
     
     # 2. Load model and tokenizer
-    model_name = "Qwen/Qwen3-8B-Instruct"
+    model_name = "Qwen/Qwen2.5-7B-Instruct"
     model, tokenizer = vf.get_model_and_tokenizer(model_name)
     
     # 3. Configure training using grpo_defaults
@@ -39,12 +41,16 @@ def main():
     args.save_steps = 20
     args.logging_steps = 1
     args.mask_env_responses = True
-    args.max_prompt_length = 1024 
+    args.max_prompt_length = 2048
     
-    args.per_device_train_batch_size = 4
-    args.num_generations = 16
-    args.gradient_accumulation_steps = 4
-    args.beta = 0
+    args.per_device_train_batch_size = 2  # Reduced to make: 1 * 4 * 2 = 8
+    args.num_generations = 4
+    args.gradient_accumulation_steps = 1  # Keep at 4 as system expects
+    
+    # Memory optimization settings
+    args.gradient_checkpointing = True
+    args.fp16 = False
+    args.bf16 = True
 
     # 4. Train
     trainer = vf.GRPOTrainer(

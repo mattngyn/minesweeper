@@ -1,0 +1,17 @@
+compute_environment: LOCAL_MACHINE
+distributed_type: DEEPSPEED
+num_processes: 2
+mixed_precision: bf16
+deepspeed_config:
+  zero_optimization:
+    stage: 3
+    contiguous_gradients: true
+    overlap_comm: true
+    reduce_scatter: true
+    stage3_gather_16bit_weights_on_model_save: false
+  bf16:
+    enabled: true
+  fp16:
+    enabled: false
+  gradient_clipping: 1.0
+  train_micro_batch_size_per_gpu: auto
